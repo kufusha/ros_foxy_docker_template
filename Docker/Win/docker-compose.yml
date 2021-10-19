@@ -3,7 +3,7 @@ services:
   sample:
     build: ../.
     volumes:
-      - ../../.:/root/ros2_ws/src/test
+      - ../../.:/root/ros2_ws/src/sample
     environment:
       - DISPLAY=host.docker.internal:0.0
     privileged: true
