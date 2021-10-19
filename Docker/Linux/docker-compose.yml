@@ -1,0 +1,11 @@
+version: "3"
+services:
+  sample:
+    build: ../.
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ../../.:/root/ros2_ws/src/test
+    environment:
+      - DISPLAY=:0
+    privileged: true
+    tty: true
