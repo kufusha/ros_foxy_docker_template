@@ -3,8 +3,10 @@
 - docker
 - docker-compose
 
-Linux は `xhost local:`<br>
-Winは VcXsrvで環境構築している前提
+``` diff
+- Linux は xhost local:
+- Winは VcXsrvで環境構築している前提
+```
 
 ## usage
 
