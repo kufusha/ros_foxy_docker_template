@@ -1,10 +1,10 @@
 version: "3"
 services:
-  sample:
-    build: ../.
+  <your_service_name>:
+    build: .
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ../../.:/root/ros2_ws/src/sample
+      - .:/root/ros2_ws/src/<your_package>
     environment:
       - DISPLAY=:0
     network_mode: host
